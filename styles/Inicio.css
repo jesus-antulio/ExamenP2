@@ -1,0 +1,42 @@
+body{    
+    background-color: rgb(233, 215, 88);
+}
+
+.container{    
+    width: 90%; 
+    margin:auto;
+    font-family: Tahoma;
+}
+
+.tittle{
+    font-family: "Impacto", carbón de leña, sans-serif;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 30pt;
+    text-align:center;
+    font-weight: bold;
+}
+
+.menu{
+    font-family: "Impacto", carbón de leña, sans-serif;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.menu .op{
+    text-decoration:none;
+    font-weight: 600;
+    font-size: 20px;
+    color:#333333;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:40px;
+    padding-right:40px;
+    background-color:#FFD27D;
+    border-color: #d8d8d8;
+    border-width: 3px;
+    border-style: solid;
+    border-radius:35px;
+}
