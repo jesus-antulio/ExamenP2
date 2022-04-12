@@ -1,6 +1,6 @@
 var
     tablero, res1, res2, name, timer,
-    segundos = 0, size = 4, movimientos = 0;
+    segundos = 0, size = 3, movimientos = 0;
 
 function inicio(){
     // creación del tablero
@@ -114,7 +114,7 @@ function imprimeTablero(){
 function llenarArreglo(){
     var num = 0,
         i = 0, j = 0,
-        aux = new Array((size*size));
+        aux = new Array(size*size);
         
     /* Arreglo auxiliar para desordenar los números */
     for(var i = 0; i < (size*size); i++){
@@ -125,7 +125,7 @@ function llenarArreglo(){
         }
     }
     
-    /* Ciclo para llenar el tablero "respuesta" */
+    /* se llena los arreglos respuesta */
     for (var i = 0; i < size; i++){
         for (var j = 0; j < size; j++){
             res1[i][j] = aux[num];

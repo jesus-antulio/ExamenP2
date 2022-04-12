@@ -2,14 +2,13 @@ body{
     background-color: rgb(233, 215, 88);
 }
 
-.container{    
+.container{   
+    font-family: "Impacto", carbón de leña, sans-serif; 
     width: 90%; 
     margin:auto;
-    font-family: Tahoma;
 }
 
 .tittle{
-    font-family: "Impacto", carbón de leña, sans-serif;
     padding-top: 10px;
     padding-bottom: 20px;
     font-size: 30pt;
@@ -17,26 +16,31 @@ body{
     font-weight: bold;
 }
 
+.datos{
+    font-size: 15pt;
+    padding: 10px;
+    padding-bottom: 30px;
+}
+
 .menu{
-    font-family: "Impacto", carbón de leña, sans-serif;
     padding: 10px;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;    
     align-items: center;
-    justify-content: center;
+    text-align: center;
 }
 .menu .op{
     text-decoration:none;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 15pt;
     color:#333333;
     padding-top:15px;
     padding-bottom:15px;
     padding-left:40px;
     padding-right:40px;
     background-color:#FFD27D;
-    border-color: #d8d8d8;
-    border-width: 3px;
-    border-style: solid;
+    border: #D8D8D8 3px solid;
     border-radius:35px;
 }
+
+

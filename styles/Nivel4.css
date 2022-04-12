@@ -1,0 +1,51 @@
+body{    
+    background-color: rgb(233, 215, 88);
+}
+
+.container{
+    width: 90%; 
+    margin:auto;
+    font-family: Tahoma;
+}
+
+.juego{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-family: "Impacto", carbón de leña, sans-serif;
+    font-size: 30pt;
+    text-align:center;
+    font-weight: bold;
+}
+
+.tablero{
+    display: flex;
+    background-color: rgb(41, 115, 115);
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 655px;
+}
+.tablero div{
+    width: 100px;
+    height: 100px;
+    margin: 3px;
+    line-height: 90px; 
+    font-family: "Comic Sans MS", cursiva, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    border: 1px solid white;
+    background-color: rgb(255, 133, 82);
+    text-align: center;
+}
+
+.datos{
+    font-family: "Lucida Console", Mónaco, espacio sencillo;
+    font-size: 18pt;
+    padding: 40px;
+}
