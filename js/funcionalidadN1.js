@@ -132,7 +132,7 @@ function llenarArreglo(){
             num++
         }
     }
-
+    
     /* función para desordenar el arreglo */
     aux.sort(function(){return Math.random()-0.5});
     

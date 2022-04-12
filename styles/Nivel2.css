@@ -49,3 +49,29 @@ body{
     font-size: 18pt;
     padding: 40px;
 }
+
+.button{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+    text-align: center;
+}
+.button .op{
+    text-decoration:none;
+    font-weight: 600;
+    font-size: 15pt;
+    color:#333333;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:40px;
+    padding-right:40px;
+    background-color:#FFD27D;
+    border: #D8D8D8 3px solid;
+    border-radius:35px;
+    text-transform: uppercase;
+}
+.button .op:hover{
+    color: #1883BA;
+    background-color: #ff933b;
+}

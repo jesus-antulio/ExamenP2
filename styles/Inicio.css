@@ -17,9 +17,17 @@ body{
 }
 
 .datos{
+    font-family: "Lucida Console", Mónaco, espacio sencillo;
     font-size: 15pt;
     padding: 10px;
+}
+
+.banner{
+    text-align: center;
     padding-bottom: 30px;
+}
+.banner img{
+    width: 60%;
 }
 
 .menu{
@@ -41,6 +49,9 @@ body{
     background-color:#FFD27D;
     border: #D8D8D8 3px solid;
     border-radius:35px;
+    text-transform: uppercase;
 }
-
-
+.menu .op:hover{
+    color: #1883BA;
+    background-color: #ff933b;
+}
