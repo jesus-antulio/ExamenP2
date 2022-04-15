@@ -86,7 +86,7 @@ function move(posI, posJ){
     }    
 
     /* Verificación para ver si se ganó la partida */
-    if(checkWin() == true){
+    if(checkWin1() == true || checkWin2() == true){
         alert("FELICIDADES, "+name+"!!! Ganaste en "+segundos+" segundos con un total de "+movimientos+" movimientos");
     }
 }
@@ -132,6 +132,31 @@ function llenarArreglo(){
             num++
         }
     }
+
+    /* se llena el arreglo en forma de caracol */
+    var n=size, inicio=0, limit=n-1, pos=0;
+
+    while(pos < (size*size)){
+        for(var i = inicio; i <= limit; i++){
+            res2[inicio][i] = aux[pos];
+            pos++;
+        }
+        for(var i = (inicio+1); i <= limit; i++){
+            res2[i][limit] = aux[pos];
+            pos++;
+        }
+        for(var i = (limit-1); i >= inicio; i--){
+            res2[limit][i] = aux[pos];
+            pos++;
+        }
+        for(var i = (limit-1); i > inicio; i--){
+            res2[i][inicio] = aux[pos];
+            pos++;
+        }
+        inicio++;
+        limit--;
+    }
+    
     
     /* función para desordenar el arreglo */
     aux.sort(function(){return Math.random()-0.5});
@@ -146,11 +171,22 @@ function llenarArreglo(){
     }
 }
 
-function checkWin(){
+function checkWin1(){
     var band = true;
     for (var i = 0; i < size; i++){
         for (var j = 0; j < size; j++){
             if(tablero[i][j] != res1[i][j]){
+                band = false;
+            }
+        }
+    }
+    return band;
+}
+function checkWin2(){
+    var band = true;
+    for (var i = 0; i < size; i++){
+        for (var j = 0; j < size; j++){
+            if(tablero[i][j] != res2[i][j]){
                 band = false;
             }
         }
