@@ -1,5 +1,5 @@
 body{    
-    background-color: rgb(233, 215, 88);
+    background-color: #364F6B;
 }
 
 .container{
@@ -26,7 +26,7 @@ body{
 
 .tablero{
     display: flex;
-    background-color: rgb(41, 115, 115);
+    background-color: #3FC1C9;
     flex-flow: row wrap;
     justify-content: center;
     width: 545px;
@@ -40,7 +40,7 @@ body{
     font-size: 30px;
     font-weight: bold;
     border: 1px solid white;
-    background-color: rgb(255, 133, 82);
+    background-color: #FC5185;
     text-align: center;
 }
 
@@ -66,12 +66,12 @@ body{
     padding-bottom:15px;
     padding-left:40px;
     padding-right:40px;
-    background-color:#FFD27D;
-    border: #D8D8D8 3px solid;
+    background-color:#FC5185;
+    border: #FFFFFF 3px solid;
     border-radius:35px;
     text-transform: uppercase;
 }
 .button .op:hover{
-    color: #1883BA;
-    background-color: #ff933b;
+    color: BLACK;
+    background-color: #3FC1C9;
 }

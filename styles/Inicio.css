@@ -1,5 +1,5 @@
 body{    
-    background-color: rgb(233, 215, 88);
+    background-color: #8FBDD3;
 }
 
 .container{   
@@ -41,17 +41,17 @@ body{
     text-decoration:none;
     font-weight: 600;
     font-size: 15pt;
-    color:#333333;
+    color:white;
     padding-top:15px;
     padding-bottom:15px;
     padding-left:40px;
     padding-right:40px;
-    background-color:#FFD27D;
-    border: #D8D8D8 3px solid;
+    background-color:#BE8C63;
+    border: #E4D1B9 3px solid;
     border-radius:35px;
     text-transform: uppercase;
 }
 .menu .op:hover{
-    color: #1883BA;
-    background-color: #ff933b;
+    color: white;
+    background-color: #A97155;
 }
