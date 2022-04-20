@@ -1,8 +1,10 @@
 var
     tablero, res1, res2, name, timer,
-    segundos = 0, size = 3, movimientos = 0;
+    segundos = 0, size, movimientos = 0;
 
-function inicio(){
+function inicio(tamTablero){
+    size = tamTablero;
+
     // creación del tablero
     tablero = new Array(size); //Arreglo en el cual se basara la partida
     res1 = new Array(size); //Arreglo en el cual se verififcara si se gana la partida
@@ -95,6 +97,8 @@ function imprimeTablero(){
     /* Impresión del tablero en la consola */
     for (var i = 0; i < size; i++)
         console.log(tablero[i]);
+    for (var i = 0; i < size; i++)
+        console.log(res1[i]);
 
     /* Impresion del tablero en pantalla */
     for(var i = 0; i < size; i++)
@@ -156,8 +160,7 @@ function llenarArreglo(){
         inicio++;
         limit--;
     }
-    
-    
+
     /* función para desordenar el arreglo */
     aux.sort(function(){return Math.random()-0.5});
     
@@ -192,4 +195,10 @@ function checkWin2(){
         }
     }
     return band;
+}
+
+function getName(){
+    name = prompt("BIENVENIDO!!! \nEscribe tu nombre :)");
+
+    document.getElementsByClassName("name")[0].innerHTML = name;
 }
