@@ -10,6 +10,8 @@ function inicio(tamTablero){
     imprimeTablero();
 
     /* iniciar el cronómetro e impresión del nombre*/
+    name = prompt("BIENVENIDO!!! \nEscribe tu nombre :)");
+
     document.getElementsByClassName("name")[0].innerHTML = name;
     timer = window.setInterval(
         function(){
